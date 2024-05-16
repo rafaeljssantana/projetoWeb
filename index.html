@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Javascript - APA</h2>
+    <hr>
+    <p><b>**Menu de opções**</b></p>
+
+    <ol>
+        <li>Inserir Dados</li>
+        <li>Consultar Dados</li>
+        <li>Editar Dados</li>
+        <li>Excluir Dados</li>
+    </ol>
+
+    <p><b>Informe uma opção: </b></p>
+    <input id="opcao" value="" placeholder="Digite sua opção de 1 a 4" required>
+    <br><br>
+
+    <button onclick="funcao()">Opção</button>
+
+    <p id="ex10"></p>
+
+    <script>
+        function funcao() {
+            opcao = document.getElementById("opcao").value;
+
+            if (opcao === "1") {
+                mensagem = "Escolhida a Inserção de Dados.";
+            }
+
+            else if (opcao === "2") {
+                mensagem = "Escolhida a Consulta de Dados.";
+            }
+
+            else if (opcao === "3") {
+                mensagem = "Escolhida a Edição de Dados.";
+            }
+
+            else if (opcao === "4") {
+                mensagem = "Escolhida a Exclusão de Dados.";
+            }
+
+            else {
+                mensagem = "Opção invalida.";
+            }
+
+            document.getElementById("ex10").innerHTML = mensagem
+        }
+    </script>
+
+
+</body>
+
+</html>
